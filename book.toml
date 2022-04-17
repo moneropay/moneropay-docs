@@ -1,0 +1,5 @@
+[book]
+authors = ["Siren", "Stnby"]
+language = "en"
+multilingual = false
+src = "src"
