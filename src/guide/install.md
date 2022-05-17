@@ -3,10 +3,12 @@
 ## Docker Compose
 The MoneroPay repository contains docker-compose.yaml which is a complete setup of MoneroPay + PostgreSQL + monero-wallet-rpc.
 
-Create an `.env` file from the `.env.example` and configure it.
+Create the `.env`, `docker-compose.override.yaml` files from the `.env.example`, `docker-compose.override.yaml.example` and configure it.
 ```sh
 cp .env.example .env
+cp docker-compose.override.yaml.example docker-compose.override.yaml
 vim .env
+vim docker-compose.override.yaml
 ```
 Bring it up.
 ```sh
@@ -23,7 +25,8 @@ Running MoneroPay without Docker.
 
 ### Compilation
 ```sh
-go install gitlab.com/moneropay/moneropay/v2@latest
-`go env GOPATH`/bin/moneropay -h
+git clone https://gitlab.com/moneropay/moneropay.git
+cd moneropay
+go build
 ```
-Now MoneroPay is installed in your `${GOPATH}/bin`.
+Now MoneroPay help page can be checked via `./moneropay -h`
