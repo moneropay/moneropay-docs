@@ -37,4 +37,4 @@ Some use cases are:
 
 MoneroPay utilizes:
  - Monero Wallet RPC
- - PostgreSQL/CockroachDB
+ - PostgreSQL
