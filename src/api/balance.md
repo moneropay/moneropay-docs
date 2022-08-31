@@ -1,5 +1,5 @@
 ## GET /balance 
-Get the entire wallets balance.
+Get the entire wallet balance.
 ### Request
 ```sh
 curl -s -X GET "${endpoint}/balance"
@@ -11,4 +11,4 @@ curl -s -X GET "${endpoint}/balance"
   "unlocked": 800000000,
 }
 ```
-> For subaddress balance look at [`GET /receive/:address`](/api/receive.html#get-receiveaddress) endpoint.
+> For querying received amounts to subaddresses take a look at [`GET /receive/:address`](/api/receive.html#get-receiveaddress) endpoint.

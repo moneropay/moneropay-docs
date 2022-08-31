@@ -22,6 +22,7 @@ Running MoneroPay without Docker.
 * Go compiler
 * PostgreSQL server (and an empty database)
 * monero-wallet-rpc server
+* A Monero wallet (view-only or full)
 
 ### Compilation
 ```sh

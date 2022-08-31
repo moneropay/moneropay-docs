@@ -7,7 +7,7 @@ curl -s -X POST "${endpoint}/receive" \
   -d '{"amount": 123000000, "description": "Server expenses", "callback_url": "http://merchant/callback/moneropay_tio2foogaaLo9olaew4o"}'
 ```
 > `"complete"` will be set to `true` inside callback and `GET /receive/:subaddress` payload,
-> when ulocked amount is equal or more to the one specified in `"amount"`.
+> when unlocked amount is equal or more to the one specified in `"amount"`.
 
 > `"description"` and `"callback_url"` are optional.
 > If `"callback_url"` is set, MoneroPay will send a POST request to URL specified with a payload described [here](/api/callback.html).
@@ -43,13 +43,14 @@ curl -s -X GET "${endpoint}/receive/${address}?min=${min_height}&max=${max_heigh
   "transactions": [
     {
       "amount": 200000000,
-      "confirmations": 4799,
+      "confirmations": 10,
       "double_spend_seen": false,
       "fee": 9200000,
       "height": 2402648,
       "timestamp": "2022-07-11T19:19:05Z",
       "tx_hash": "0c9a7b40b15596fa9a06ba32463a19d781c075120bb59ab5e4ed2a97ab3b7f33",
-      "unlock_time": 0
+      "unlock_time": 0,
+      "locked": false
     }
   ]
 }
