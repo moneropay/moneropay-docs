@@ -31,7 +31,7 @@ curl -s -X GET "${endpoint}/receive/${address}?min=${min_height}&max=${max_heigh
 ```json
 {
   "amount": {
-    "expected": 1,
+    "expected": 200000000,
     "covered": {
       "total": 200000000,
       "unlocked": 200000000
