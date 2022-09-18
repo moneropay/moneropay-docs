@@ -6,7 +6,7 @@
 
 - [Installation](guide/install.md)
 - [Security and scalability](guide/secscale.md)
-- [Application workflow](guide/workflow.md)
+- [Merchant workflow](guide/workflow.md)
 
 ## API Reference
 

@@ -1,37 +1,4 @@
-# Application workflow
-A diagram showcasing an example workflow of an online shop.
-```
-+-----------+                +-------+                                                       +-----------+
-| Customer  |                | Shop  |                                                       | MoneroPay |
-+-----------+                +-------+                                                       +-----------+
-      |                          |                                                                 |
-      | Makes purchase 0.001 XMR |                                                                 |
-      |------------------------->|                                                                 |
-      |                          |                                                                 |
-      |                          | GET /receive amount=1000000000 callback_url=http://address/1234 |
-      |                          |---------------------------------------------------------------->|
-      |                          |                                                                 |
-      |                          |                                         "address": "84Wsptn..." |
-      |                          |<----------------------------------------------------------------|
-      |                          |                                                                 |
-      |   Return addr 84Wsptn... |                                                                 |
-      |<-------------------------|                                                                 |
-      | -----------------------\ |                                                                 |
-      |-| Pays to the address. | |                                                                 |
-      | |----------------------| |                                                                 |
-      |                          |                                     Poll for incoming transfers |
-      |                          |                                     ----------------------------|
-      |                          |                                     |                           |
-      |                          |                                     --------------------------->|
-      |                          |                                                                 |
-      |                          |                       ----------------------------------------\ |
-      |                          |                       | A transfer was received to 84Wsptn... |-|
-      |                          |                       |---------------------------------------| |
-      |                          |                                                                 |
-      |                          |                        POST http://address/1234 "callback data" |
-      |                          |<----------------------------------------------------------------|
-      |                          | -----------------\                                              |
-      |                          |-| Prepare order. |                                              |
-      |                          | |----------------|                                              |
-      |                          |                                                                 |
-```
+# Merchant workflow
+Here is a sequence diagram that displays the interaction between the merchant and MoneroPay.
+
+![diag1](../images/mpay-graph.png)

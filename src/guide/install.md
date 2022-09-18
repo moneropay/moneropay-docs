@@ -10,6 +10,15 @@ cp docker-compose.override.yaml.example docker-compose.override.yaml
 vim .env
 vim docker-compose.override.yaml
 ```
+
+Create the data directory and add your wallet files.
+```sh
+mkdir -p data/wallet
+cp wallet{,.key} data/wallet
+chown -R 1000:1000 data/wallet # change owner to prevent permission errors
+```
+> Docker compose configuration expects the wallet key file to be called `wallet.key`. You can choose to rename your wallet key file or change the name in the `docker-compose.yaml` file.
+
 Bring it up.
 ```sh
 docker compose up -d
