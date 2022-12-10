@@ -30,8 +30,8 @@ MoneroPay is not a plugin for an existing e-commerce solution.
 It is a standalone backend daemon that can be used for any purpose.
 Some use cases are:
 - Online stores/e-commerce
-- In-game purchases
 - Donation/fundraiser websites
+- ATMs
 - Paid services like parking or bus ticket applications
 - Shell scripts and programs for any purpose
 
