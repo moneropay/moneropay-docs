@@ -18,7 +18,7 @@ cp wallet{,.keys} data/wallet
 touch wallet.passwd # if your wallet is password protected, write it in this file. Else leave empty.
 chown -R 1000:1000 data/wallet # change owner to prevent permission errors
 ```
-> Docker compose configuration expects the wallet key file to be called `wallet.keys`. You can choose to rename your wallet keys file or change the name in the `docker-compose.yaml` file.
+> Docker compose configuration expects the wallet keys file to be called `wallet.keys`. You can choose to rename your wallet keys file or change the name in the `docker-compose.yaml` file.
 
 Now you should have 3 files under `data/wallet` directory: `wallet`, `wallet.keys` and `wallet.passwd`.
 
