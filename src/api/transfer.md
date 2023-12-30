@@ -12,7 +12,8 @@ curl -s -X POST "${endpoint}/transfer" \
 {
   "amount": 1337000000,
   "fee": 87438594,
-  "tx_hash_list": ["5ca34..."],
+  "tx_hash": "5ca34...",
+  "tx_hash_list": ["5ca34...", "cf448..."],
   "destinations": [
     {
       "amount": 1337000000,
