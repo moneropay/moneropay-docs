@@ -1,21 +1,22 @@
 ## POST /transfer
-Transfer to a single or multiple recipients.
+Transfer to a single or multiple recipients. If necessary, split the transfer into multiple transactions.
 ### Request
 ```sh
 curl -s -X POST "${endpoint}/transfer" \
 	-H 'Content-Type: application/json' \
 	-d '{"destinations": [{"amount": 1337000000, "address": "47stn..."}]}'
 ```
-> This transaction uses balance of a Primary Address.
+> This transaction uses balance of the wallet's Primary Account.
 ### Response
 ```json
 {
   "amount": 1337000000,
   "fee": 87438594,
   "tx_hash": "5ca34...",
+  "tx_hash_list": ["5ca34...", "cf448..."],
   "destinations": [
     {
-      "amount": 1337,
+      "amount": 1337000000,
       "address": "47stn..."
     }
   ]
