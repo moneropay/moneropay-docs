@@ -1,5 +1,5 @@
 # Callback payload
-MoneroPay contains a goroutine which checks for new incoming and recently unlocked transactions every 30 seconds and sends a `POST` request to `"callback_url"` specified in the [`POST /receive`](/api/receive.html#post-receive) endpoint with the following payload:
+MoneroPay contains a goroutine which checks for new incoming transactions every 5 seconds and sends a `POST` request to `"callback_url"` specified in the [`POST /receive`](/api/receive.html#post-receive) endpoint with the following payload:
 ```json
 {
   "amount": {

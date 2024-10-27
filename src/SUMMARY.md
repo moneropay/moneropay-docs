@@ -16,3 +16,8 @@
     - [receive](api/receive.md)
     - [transfer](api/transfer.md)
 - [Callbacks](api/callback.md)
+
+## Features / Options
+
+- [Options](options/options.md)
+    - [0-conf](options/zeroconf.md)

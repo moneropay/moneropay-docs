@@ -13,11 +13,14 @@ Welcome to the MoneroPay documentation. Here you will find information on how to
      ^^ ^^
 ```
 
+- Project main repository: [https://gitlab.com/moneropay/moneropay](https://gitlab.com/moneropay/moneropay)
+- Matrix: [https://matrix.to/#/#moneropay:kernal.eu](https://matrix.to/#/#moneropay:kernal.eu)
+- GitHub mirror: [https://github.com/moneropay/moneropay](https://github.com/moneropay/moneropay)
+- Commercial support: Contact us at [info@digilol.net](mailto:info@digilol.net)
+
 Feel free to open a [PR](https://gitlab.com/moneropay/moneropay/-/merge_requests), raise an [issue](https://gitlab.com/moneropay/moneropay/-/issues) or request a new feature.
 
 For related discussions join our [Matrix room](https://matrix.to/#/#moneropay:kernal.eu).
-
-We also offer commercial support for merchants and developers. Contact us at [info@digilol.net](mailto:info@digilol.net).
 
 ## What is this?
 A backend service for receiving, sending and tracking status of Monero payments.
@@ -37,4 +40,4 @@ Some use cases are:
 
 MoneroPay utilizes:
  - Monero Wallet RPC
- - PostgreSQL
+ - PostgreSQL (or SQLite)

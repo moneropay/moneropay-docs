@@ -45,6 +45,6 @@ Running MoneroPay without Docker.
 ```sh
 git clone https://gitlab.com/moneropay/moneropay.git
 cd moneropay
-go build
+go build ./cmd/moneropay
 ```
 Now MoneroPay help page can be checked via `./moneropay -h`
