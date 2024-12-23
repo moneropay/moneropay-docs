@@ -1,17 +1,8 @@
 # Introduction
 Welcome to the MoneroPay documentation. Here you will find information on how to deploy it and API specification.
-```
-    .-"""-.
-   /       \
-  |__/\_/\__|
-   \       /
-    '-...-'
-       _
-    \('v')/
-     /   \
-    (\_ _/)
-     ^^ ^^
-```
+
+![MoneroPay banner - Logo by @mondetta, mascot by @siren](/images/mpay-banner.webp)
+_MoneroPay logo by Mondetta, mascot by Siren._
 
 - Project main repository: [https://gitlab.com/moneropay/moneropay](https://gitlab.com/moneropay/moneropay)
 - Matrix: [https://matrix.to/#/#moneropay:kernal.eu](https://matrix.to/#/#moneropay:kernal.eu)
